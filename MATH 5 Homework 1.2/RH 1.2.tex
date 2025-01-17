@@ -24,7 +24,6 @@
 \date{Tejas Patel}
 \begin{document}
 \maketitle
-\# 3,7,14,21,24,35,37
 \subsection*{3: Convert matrix to RREF}
 $
 \left[\begin{array}{ccc|c}
@@ -78,7 +77,6 @@ $\\[0.1in] Subtract $4R_2$ from $R_1 \rightarrow
 \end{array}\right]
 $ \\[0.1in] Free variable: $X_2 = t$
 \\$X_1=-5-3t \\ X_2 = t \\ X_3=3 \\ \boxed{(-5-3t, t, 3)}$ 
-\pagebreak
 \subsection*{14: Find the general solution to the system}
 $\left[\begin{array}{ccccc|c}
     1 & 2 & -5 & -4 & 0 & -5 \\
@@ -94,9 +92,28 @@ $\left[\begin{array}{ccccc|c}
 \end{array}\right]
 $ \\[0.1in] Free Variables $X_3 = s, \; X_4=t$
 \\Solution: $X_1 = -9-7s-4t, \; X_2 = 2+6s+4t, \; X_3 = s, \; X_4 = t, \; X_5 = 0$
-\\[1.2mm]\boxed{ -9-7s-4t,\; 2+6s+4t, \; s, \; t, \;  0}
-\subsection*{21}
-\subsection*{24}
+\\[1.2mm]\boxed{ -9-7s-4t,\; 2+6s+4t, \; s, \; t, \;  0} \pagebreak
+\subsection*{21: Find h where the system is consistent}
+$\left[\begin{array}{cc|c}
+    2 & 3 & h \\
+    4 & 6 & 7 
+\end{array}\right] \rightarrow$ Scale $R_1$ by $2 \rightarrow
+\left[\begin{array}{cc|c}
+    4 & 6 & 2h \\
+    4 & 6 & 7 
+\end{array}\right] \rightarrow 2h=7 \rightarrow \boxed{h=3.5}
+$
+\subsection*{24: Choose h \& k such that the system has (a) no solution, (b) a unique solution, and (c) many solutions}
+$\left[\begin{array}{cc|c}
+    1 & 3 & 2 \\
+    3 & h & k 
+\end{array}\right]$
+\subsubsection*{a}
+At $h=9$ and $k\neq 6$, you'd need to scale $R_1$ by 3 and show $6\neq 6$ meaning there would be no solution to the system
+\subsubsection*{b}
+At $h=4$ and $k=3$ there is one solution, as long as $h \neq 9$ and $k \neq 6$ there will be one solution. In this case the solution is $X_1=\frac{1}{5} \qquad X_2 = \frac{3}{5}$
+\subsubsection*{c}
+At $h=9$ and $k=6$ the two equations will be scalar multiples of each other, meaning multiple solutions exist.
 \subsection*{35}
 \subsection*{37}
 
