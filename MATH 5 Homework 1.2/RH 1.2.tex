@@ -19,204 +19,59 @@
 \usepackage[top=1in, left=0.8in, right=0.8in, bottom=1in]{geometry}
 \AtBeginEnvironment{document}{\everymath{\displaystyle}}
 \pagestyle{plain}
-\title{RH 1.1}
+\title{RH 1.2}
 \author{MATH 5, Jones}
 \date{Tejas Patel}
 \begin{document}
 \maketitle
-
-
-
-
-\subsection*{23: Find h where system is consistent}
-$\left[\begin{array}{cc|c}
-1 & h & 4 \\
-3 & 6 & 8
-\end{array}\right] 
-\rightarrow$ Scale Row 1 by 2 $\rightarrow
-\left[\begin{array}{cc|c}
-3 & 3h & 12 \\
-3 & 6 & 8
-\end{array}\right] \\[0.05in]
-\cancel{3x_1}+3hx_2-12=\cancel{3x_1}+6x_2-8\\ 
-3hx_2=6x_2+4 \\ (3h-6)x_2=4 \\ 3h-6 \neq 0\text{ to avoid } 0y=4$ \\ \boxed{h \neq 2}
-
-\subsection*{26: Find h where system is consistent}
-$ \left[\begin{array}{cc|c}
-2 & -3 & h \\
--6 & 9 & 5
-\end{array}\right] 
-\rightarrow$ Scale Row 1 by -3
-$\rightarrow \left[\begin{array}{cc|c}
--6 & 9 & -3h \\
--6 & 9 & 5
-\end{array}\right] \\[0.05in] 
--3h=5 \rightarrow$ \boxed{h = -\frac{5}{3}}
-
-\subsection*{33: T/F The two fundamental questions involve existence and uniqueness}
-\boxed{$\textbf{True}$}\\The questions are:\\
-Question 1: Does a solution exist? (Existence)\\Question 2: If a solution does exist, is that solution the only one? (Uniqueness)\\
-
-\pagebreak
-
-Computer Homework Problems
-
-\subsection*{1: Solve the system}
+\# 3,7,14,21,24,35,37
+\subsection*{3: Convert matrix to RREF}
 $
-x_1+2x_2=-1 \qquad 4x_1+5x_2=-10\\ [0.05in]
-4x_1+8x_2=-4 \qquad 4x_1+5x_2=-10\\ [0.05in]
-4x_1=-4-8x_2 \qquad 4x_1=-10-5x_2\\ [0.05in]
--4-8x_2=-10-5x_2\\
-6=3x_2\\[0.05in]
-x_2 = 2\\
-x_1+2(2)=-1\\
-x_1=-5\\
-\boxed{(-5,2)}
-$
-\subsection*{2: Solve the system}
-$
-x_1+2x_2=8 \qquad x_1-x_2 = -1\\[0.05in]
-x_1=8-2x_2 \qquad x_1 =x_2-1\\[0.05in]
-8-2x_2=x_2-1\\
-9=3x_2\\ 
-x_2 = 3\\ 
-x_1-3=-1\\ 
-x_1 = 2\\ 
-\boxed{(2,3)}
-$
-\subsection*{3: Consider the accompanying matrix as the augmented matrix of a linear system. State in words the next two elementary row operations that should be performed in the process of solving the system.}
-$\left[\begin{array}{cccc|c}
-1 & -6 & 4 & 0 & -2 \\
-0 & 2 & -6 & 0 & 5 \\ 
-0 & 0 & 1 & 4 & -2 \\ 
-0 & 0 & 4 & 13 & 4
-\end{array}\right] 
-$
-\subsubsection*{First elementary row operation:}
-Replace row 4 by its sum with -4 times row 3.\\ Resultant array: \\
-$\left[\begin{array}{cccc|c}
-1 & -6 & 4 & 0 & -2 \\
-0 & 2 & -6 & 0 & 5 \\ 
-0 & 0 & 1 & 4 & -2 \\ 
-0 & 0 & 0 & -3 & 12
-\end{array}\right] 
-$
-\subsubsection*{Second elementary row operation:}
-Scale row 4 by $-\frac{1}{3}$
-\\ Resultant array: \\
-$\left[\begin{array}{cccc|c}
-1 & -6 & 4 & 0 & -2 \\
-0 & 2 & -6 & 0 & 5 \\ 
-0 & 0 & 1 & 4 & -2 \\ 
-0 & 0 & 0 & 1 & -4
-\end{array}\right] 
-$
-\pagebreak
-\subsection*{4: Describe the solution set of the system.}
-$\left[\begin{array}{ccc|c}
-0 & 0 & 0 & 2 \\
-0 & 1 & -1 & 4 \\ 
-0 & 0 & 1 & 2 \\ 
-1 & 6 & 3 & -5
-\end{array}\right] 
-$\\
-\boxed{$Solution set is empty. In the first row $ 0 \neq 2}
-\subsection*{5: Solve the system}
-$\left[\begin{array}{ccc|c}
-1 & 0 & -3 & 13 \\
-2 & 4 & 7 & 7 \\ 
-0 & 2 & 3 & 1  
-\end{array}\right] \\[0.1in]$ Add row 3 to row 1 
-$\rightarrow \left[\begin{array}{ccc|c}
-1 & 2 & 0 & 14 \\
-2 & 4 & 7 & 7 \\ 
-0 & 2 & 3 & 1  
-\end{array}\right] \\[0.1in]
-$Scale row 1 by 2
-$\rightarrow \left[\begin{array}{ccc|c}
-2 & 4 & 0 & 28 \\
-2 & 4 & 7 & 7 \\ 
-0 & 2 & 3 & 1  
-\end{array}\right] \\[0.1in]
-$
-Subtract row 2 from row 1
-$\rightarrow \left[\begin{array}{ccc|c}
-0 & 0 & -7 & 21 \\
-2 & 4 & 7 & 7 \\ 
-0 & 2 & 3 & 1  
-\end{array}\right] \\[0.1in]
-$
-Scale row 1 by $-\frac{1}{7}$
-$\rightarrow \left[\begin{array}{ccc|c}
-0 & 0 & 1 & -3 \\
-2 & 4 & 7 & 7 \\ 
-0 & 2 & 3 & 1  
-\end{array}\right] \\[0.1in]
-$
-Subtract 3 times row 1 from row 3
-$\rightarrow \left[\begin{array}{ccc|c}
-0 & 0 & 1 & -3 \\
-2 & 4 & 7 & 7 \\ 
-0 & 2 & 0 & 10  
-\end{array}\right] \\[0.1in]
-$
-Scale row 3 by $\frac{1}{2}$
-$\rightarrow \left[\begin{array}{ccc|c}
-0 & 0 & 1 & -3 \\
-2 & 4 & 7 & 7 \\ 
-0 & 1 & 0 & 5  
-\end{array}\right] \\[0.1in]
-$ Subtract 7 times row 1 from row 2 and 4 times row 3 from row 2
-$\rightarrow \left[\begin{array}{ccc|c}
-0 & 0 & 1 & -3 \\
-2 & 0 & 0 & 4 \\ 
-0 & 1 & 0 & 5  
-\end{array}\right] \\
-$ 
-\textbf{Solution: } \boxed{(4, 5, -3)}
-
-\subsection*{6: Determine if the system is consistent}
-$\left[\begin{array}{cccc|c}
-2 & 0 & 6 & 0 & 10 \\
-0 & 1 & 0 & -2 & 2 \\
-0 & -2 & 6 & 2 & 3 \\
-6 & 0 & 0 & 7 & -4 \\
-\end{array}\right] \\[0.05in]
-$ 
-\boxed{$The system is consistent as there is a relation between every variable without any duplicate relations$}
-\pagebreak 
-\subsection*{7: Determine the h values for which the system is consistent}
-$\left[\begin{array}{cc|c} 1 & h & 3 \\4 & 20 & 9 \end{array}\right] \rightarrow 
-$ Scale row 1 by 4 $\rightarrow \left[\begin{array}{cc|c} 4 & 4h & 12 \\4 & 20 & 9 \end{array}\right] $
-\\$(4h-20)y=3$ \\ to avoid $0y=3 \downarrow$ \\ $4h-20\neq 0$\\$4h\neq 20$ \\ $h \neq 5$
-
-\subsection*{8: Suppose the system is consistent for all f and g. What can you say about the coefficients c and d?}
-$x_1+ 4x_2=f\\cx_1+dx_2=g$\\[0.05in]
-$\left[\begin{array}{cc|c}
-    1 & 4 & f \\
-    c & d & g
-    \end{array}\right]
-$ to 
-$\left[\begin{array}{cc|c}
-    1 & 4 & f \\
-    0 & d-4c & g-cf
-    \end{array}\right]
-$ shows that $d-4c \neq 0$ since $f$ and $g$ are arbitrary, otherwise the second row would imply $0=b$ where $b$ is nonzero. Therefore, $d \neq 4c$
-
-\subsection*{9: Find the elementary row operation that transforms the first matrix into the second, and then find the reverse row operation that transforms the second matrix into the first.}
-$\left[\begin{array}{ccc|c}
-1 & -3 & 2 & 0 \\
-3 & -2 & 2 & -5 \\ 
-0 & 3 & -2 & 8 
-\end{array}\right] ,
 \left[\begin{array}{ccc|c}
-    1 & -3 & 2 & 0 \\
-    0 & 7 & -4 & -5 \\ 
-    0 & 3 & -2 & 8 
-    \end{array}\right] 
-$
-\\ \textbf{First matrix to second:}
-Replace row 2 by its sum with -3 times row 1.
-\\ \textbf{Second matrix to first:}
-Replace row 2 by its sum with 3 times row 1.
+    1 & 2 & 3 & 4 \\
+    4 & 5 & 6 & 7 \\
+    6 & 7 & 8 & 9 
+\end{array}\right]
+$ Subtract $4R_1$ from $R_2$ and $6R_1$ from $R_3 \rightarrow
+\left[\begin{array}{ccc|c}
+    1 & 2 & 3 & 4 \\
+    0 & -3 & -6 & -9 \\
+    0 & -5 & -10 & -15 
+\end{array}\right]
+$\\[0.1in]Scale $R_2$ by $-\frac{1}{3}$ and $R_3$ by $-\frac{1}{5} \rightarrow 
+\left[\begin{array}{ccc|c}
+    1 & 2 & 3 & 4 \\
+    0 & 1 & 2 & 3 \\
+    0 & 1 & 2 & 3 
+\end{array}\right]$ \\[0.1in] Subtract $R_2$ from $R_3 \rightarrow
+\left[\begin{array}{ccc|c}
+    1 & 2 & 3 & 4 \\
+    0 & 1 & 2 & 3 \\
+    0 & 0 & 0 & 0 
+\end{array}\right]$ \\[0.1in] Subtract $2R_2$ from $R_1 \rightarrow
+\boxed{\left[\begin{array}{ccc|c}
+    1 & 0 & -1 & -2 \\
+    0 & 1 & 2 & 3 \\
+    0 & 0 & 0 & 0 
+\end{array}\right]}
+$ is the resultant matrix in RREF
+\subsection*{7: Find the general solution to the system}
+
+
+
+
+
+
+
+
+\subsection*{14}
+\subsection*{21}
+\subsection*{24}
+\subsection*{35}
+\subsection*{37}
+
+
+
+
+
 \end{document}
