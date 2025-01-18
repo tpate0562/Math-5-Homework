@@ -117,9 +117,38 @@ At $h=9$ and $k=6$ the two equations will be scalar multiples of each other, mea
 \subsection*{35: Suppose a $3\times 5$ \textit{coeﬃcient} matrix for a system has three pivot columns. Is the system consistent? Why or why not?}
 3 Rows $\times$ 5 Columns means there will be 5 variables and only 3 equations to relate the variables to each other. Since there are 5 variables but 3 equations and 3 pivot points, we know there are 2 free variables, which means \boxed{$the system could have an infinite solution set, meaning it is consistent$}
 \subsection*{37: Suppose the coeﬃcient matrix of a system of linear equations has a pivot position in every row. Explain why the system is consistent.}
-If there is a pivot in every row, that means every row is defined to equal the constant it shares a row with. Since every variable is mapped to a constant, there \boxed{$is a unique solution and the system is consistent$}
+If there is a pivot in every row, that means every row is defined to equal the constant it shares a row with. Since every variable is mapped to a constant, there \boxed{$is a unique solution and the system is consistent$}\\
+\pagebreak
 
-
-
-
+\section*{Computer Homework}
+\subsection*{1: Convert matrix to RREF}
+$\left[\begin{array}{ccc|c}
+    1 & 2 & 3 & 4 \\
+    3& 4 & 5 & 6 \\
+    6 & 7 & 8 & 9 
+\end{array}\right]
+\rightarrow$ Subtract $6R_1$ from $R_3$ and $3R_1$ from $R_2$ $\rightarrow
+\left[\begin{array}{ccc|c}
+    1 & 2 & 3 & 4 \\
+    0 & -2 & -4 & -6 \\
+    0 & -5 & -10 & -15 
+\end{array}\right]$ \\[0.1in] Subtract $2.5R_2$ from $R_3 \rightarrow
+\left[\begin{array}{ccc|c}
+    1 & 2 & 3 & 4 \\
+    0 & -2 & -4 & -6 \\
+    0 & 0 & 0 & 0 
+\end{array}\right]$ \\[0.1in] Scale $R_2$ by $-\frac{1}{2} \rightarrow
+\left[\begin{array}{ccc|c}
+    1 & 2 & 3 & 4 \\
+    0 & 1 & 2 & 3 \\
+    0 & 0 & 0 & 0 
+\end{array}\right]
+$\\[0.1in] Subtract $R_2$ form $R_1\rightarrow
+\boxed{\left[\begin{array}{ccc|c}
+    1 & 0 & -1 & -2 \\
+    0 & 1 & 2 & 3 \\
+    0 & 0 & 0 & 0 
+\end{array}\right]}
+$ The matrix is now in RREF with pivot columns 1 and 2
+\subsection*{2: }
 \end{document}
