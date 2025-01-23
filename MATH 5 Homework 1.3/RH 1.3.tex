@@ -25,6 +25,81 @@
 \begin{document}
 \maketitle
 \section{Refrigerator Homework}
-\section*{Computer Homework}
+\subsection*{Practice Problem 3}
+Let \textbf{$w_1, w_2, w_3, u, v$} be vectors in $\mathbb{R}^n$. Suppose the vectors \textbf{u} and \textbf{v} are in Span ${w_1, w_2, w_3}$
+g. Show that $u + v$ is also in Span ${w_1, w_2, w_3}$
 
+Since $u$ and $v$ exist in Span ${w_1, w_2, w_3}$, there must bc constants $x_n$ for $u$ and $y_n$ for $v$ where $u= \sum_{m=1}^{n} x_mw_m$ and $v= \sum_{m=1}^{n} y_mw_m$
+. With this, $u+v=x_1w_1+x_2w_2+x_3w_3+y_1w_1+y_2w_2+y_3w_3= (y_1+x_1)w_1+(y_2+x_2)w_2+(y_3+x_3)w_3$
+\\Since all three of those coefficients are scalar quantities, \boxed{u+v$ is in Span ${w_1, w_2, w_3}}
+\subsection*{17}
+$a_1=\left[\begin{array}{c}
+    1\\4\\-2
+\end{array}\right]a_2=\left[\begin{array}{c}
+-2\\-3\\7
+\end{array}\right]b=\left[\begin{array}{c}
+4\\1\\h
+\end{array}\right]$ for what value(s) of $h$ is $b$ in the plane spanned by $a_1$ and $a_2$?
+\\[0.1in]$a_1-2a_2=4 \qquad 4a_1-3a_2=1$\\$5a_2=-15 \rightarrow a_2=-3$\\$a_1+6=4 \rightarrow a_1=-2$\\$-2(-2)+-3(7)=h \rightarrow$ \boxed{h=-17}
+\subsection*{21}
+$ -2c_1 + 2c_2 = h $  \\
+$ c_1 + c_2 = k $  \\
+Second equation:  \\
+$ c_1 = k - c_2 $  \\
+Substituting into the first equation:  \\
+$ -2(k - c_2) + 2c_2 = h \rightarrow -2k + 2c_2 + 2c_2 = h $  \\
+$ -2k + 4c_2 = h \rightarrow c_2 = \frac{h + 2k}{4} $  \\
+Substituting back:  \\
+$ c_1 = k - \frac{h + 2k}{4} = \frac{4k - h - 2k}{4} $  
+\\$ c_1 = \frac{2k - h}{4} $ \\ 
+Since division by 0 never occurs and the system always has solutions for any $ h $ and $ k $, it follows that the span of $ \mathbf{u} $ and $ \mathbf{v} $ covers the entire $ \mathbb{R}^2 $, meaning they form a basis for $ \mathbb{R}^2 $.  
+\subsection*{23}
+T/F $\left[\begin{array}{c}
+    -4\\3
+\end{array}\right]\equiv \left[-4 \; 3\right]$ is \textbf{false}. Row vectors and column vectors have different meanings in the way they are read and are only equivalent when marked as transposed
+\subsection*{25}
+T/F (-2,5) and (-5,2) lie on a line passing through the origin. This statement is \textbf{false} as the line equation is $y=x+7$ and (0,0 is not a solution)
+\subsection*{33}
+a: No, 3
+\\b: 
+$
+\begin{bmatrix}
+1 & 0 & -4 & 4 \\
+0 & 3 & -2 & 1 \\
+-2 & 6 & 3 & -4
+\end{bmatrix}
+$
+\\$R_3+=2R_1 \rightarrow \begin{bmatrix}
+    1 & 0 & -4 & 4 \\
+    0 & 3 & -2 & 1 \\
+    0 & 6 & -5 & 4
+    \end{bmatrix}$ \\[0.1in]$R_3-=2R_2 \rightarrow
+    \begin{bmatrix}
+        1 & 0 & -4 & 4 \\
+        0 & 3 & -2 & 1 \\
+        0 & 0 & 1 & 2
+        \end{bmatrix}
+    $\\[0.1in]$R_1+=4R_3$ and $R_2+=2R_3 \rightarrow
+    \begin{bmatrix}
+        1 & 0 & 0 & 12 \\
+        0 & 3 & 0 & 5 \\
+        0 & 0 & 1 & 2
+        \end{bmatrix}
+    $ \\$R_2 /= 3 \rightarrow \begin{bmatrix}
+        1 & 0 & 0 & 12 \\
+        0 & 1 & 0 & 5/3 \\
+        0 & 0 & 1 & 2
+        \end{bmatrix}$ Yes \textbf{b} is in $W$ and there are an infinite number of vectors in W
+\\c: $a_1=1\cdot a_1+ 0a_2 + 0a_3$ \checkmark
+\section*{Computer Homework}
+\subsection*{1}
+\subsection*{2}
+\subsection*{3}
+\subsection*{4}
+\subsection*{5}
+\subsection*{6}
+\subsection*{7}
+\subsection*{8}
+\subsection*{9}
+\subsection*{10}
 \end{document}
