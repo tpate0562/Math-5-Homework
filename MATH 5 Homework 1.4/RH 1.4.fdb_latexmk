@@ -1,6 +1,6 @@
 # Fdb version 4
-["pdflatex"] 1737935845.89722 "/Users/tejaspatel/Desktop/LaTeX Projects/Math 5 Homework/MATH 5 Homework 1.4/RH 1.4.tex" "RH 1.4.pdf" "RH 1.4" 1737935846.92295 0
-  "/Users/tejaspatel/Desktop/LaTeX Projects/Math 5 Homework/MATH 5 Homework 1.4/RH 1.4.tex" 1737935845.67183 4314 840b0291b14fcc77387df9c5c4121ad3 ""
+["pdflatex"] 1737943181.66274 "/Users/tejaspatel/Desktop/LaTeX Projects/Math 5 Homework/MATH 5 Homework 1.4/RH 1.4.tex" "RH 1.4.pdf" "RH 1.4" 1737943182.9753 0
+  "/Users/tejaspatel/Desktop/LaTeX Projects/Math 5 Homework/MATH 5 Homework 1.4/RH 1.4.tex" 1737943181.43171 8082 f240b7883de8dd343b102115a93feccd ""
   "/usr/local/texlive/2024/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1246382020 1004 54797486969f23fa377b128694d548df ""
   "/usr/local/texlive/2024/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm" 1246382020 988 bdf658c3bfc2d96d3c8b02cfc1c94c20 ""
@@ -211,9 +211,9 @@
   "/usr/local/texlive/2024/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1729555295.99067 5467645 128b85b7cde5f5edc5cb7f1dd7ff8736 ""
   "/usr/local/texlive/2024/texmf-var/web2c/pdftex/pdflatex.fmt" 1729555229 8221428 380a9ae05887af09f5a76ce7a01b05d8 ""
   "/usr/local/texlive/2024/texmf.cnf" 1710266656 577 e590dabc9e28c5b61546e15f63eebcdf ""
-  "RH 1.4.aux" 1737935846.79078 162 87159b23cce7c2b923b11c85495bbd6d "pdflatex"
-  "RH 1.4.out" 1737935846.56873 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
-  "RH 1.4.tex" 1737935845.67183 4314 840b0291b14fcc77387df9c5c4121ad3 ""
+  "RH 1.4.aux" 1737943182.8771 162 59504cb8f8bee0a3f0488d753cb23a1e "pdflatex"
+  "RH 1.4.out" 1737943182.65425 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+  "RH 1.4.tex" 1737943181.43171 8082 f240b7883de8dd343b102115a93feccd ""
   (generated)
   "RH 1.4.aux"
   "RH 1.4.log"
