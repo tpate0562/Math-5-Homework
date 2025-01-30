@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.10.21)  29 JAN 2025 21:14
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.10.21)  29 JAN 2025 22:40
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**"/Users/tejaspatel/Desktop/LaTeX Projects/Math 5 Homework/MATH 5 Homework 1.4/RH 1.4.tex"
-(/Users/tejaspatel/Desktop/LaTeX Projects/Math 5 Homework/MATH 5 Homework 1.4/RH 1.4.tex
+**"/Users/tejaspatel/Desktop/LaTeX Projects/Math 5 Homework/RH 1.5.tex"
+(/Users/tejaspatel/Desktop/LaTeX Projects/Math 5 Homework/RH 1.5.tex
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-02-20>
 (/usr/local/texlive/2024/texmf-dist/tex/latex/base/article.cls
@@ -633,8 +633,8 @@ Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
 File: l3backend-pdftex.def 2024-02-20 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count362
 \l__pdf_internal_box=\box113
-) (./RH 1.4.aux)
-\openout1 = `"RH 1.4.aux"'.
+) (./RH 1.5.aux)
+\openout1 = `"RH 1.5.aux"'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 25.
 LaTeX Font Info:    ... okay on input line 25.
@@ -678,9 +678,9 @@ Package pgfplots Warning: running in backwards compatibility mode (unsuitable ti
  on input line 25.
 
 Package hyperref Info: Link coloring OFF on input line 25.
-(./RH 1.4.out) (./RH 1.4.out)
+(./RH 1.5.out) (./RH 1.5.out)
 \@outlinefile=\write4
-\openout4 = `"RH 1.4.out"'.
+\openout4 = `"RH 1.5.out"'.
 
 LaTeX Info: Redefining \celsius on input line 25.
 Package gensymb Info: Faking symbols for \degree and \celsius on input line 25.
@@ -702,14 +702,14 @@ Package gensymb Warning: Not defining \micro.
 * layoutoffset:(h,v)=(0.0pt,0.0pt)
 * modes: 
 * h-part:(L,W,R)=(57.81621pt, 498.66258pt, 57.81621pt)
-* v-part:(T,H,B)=(72.26999pt, 650.43001pt, 72.26999pt)
+* v-part:(T,H,B)=(50.58878pt, 672.11122pt, 72.26999pt)
 * \paperwidth=614.295pt
 * \paperheight=794.96999pt
 * \textwidth=498.66258pt
-* \textheight=650.43001pt
+* \textheight=672.11122pt
 * \oddsidemargin=-14.45378pt
 * \evensidemargin=-14.45378pt
-* \topmargin=-37.0pt
+* \topmargin=-58.68121pt
 * \headheight=12.0pt
 * \headsep=25.0pt
 * \topskip=10.0pt
@@ -736,32 +736,27 @@ LaTeX Font Info:    Trying to load font information for U+msb on input line 27.
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) [1
 
-{/usr/local/texlive/2024/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] [2] [3]
-Overfull \hbox (9.22104pt too wide) in paragraph at lines 124--128
-\OT1/cmr/m/n/10 Do the columns of A span $\U/msb/m/n/10 R[]$\OT1/cmr/m/n/10 ? Does the equa-tion $\OML/cmm/m/it/10 A\OT1/cmr/bx/n/10 x \OT1/cmr/m/n/10 = \OT1/cmr/bx/n/10 b$ \OT1/cmr/m/n/10 have a so-lu-tion for each $\OT1/cmr/bx/n/10 b$ \OT1/cmr/m/n/10 in $\U/msb/m/n/10 R[]$\OT1/cmr/m/n/10 ? $\OML/cmm/m/it/10 A \OT1/cmr/m/n/10 = []$ 
- []
-
-[4] (./RH 1.4.aux)
+{/usr/local/texlive/2024/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] [2] (./RH 1.5.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-02-20>
  ***********
-Package rerunfilecheck Info: File `"RH 1.4".out' has not changed.
-(rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
+Package rerunfilecheck Info: File `"RH 1.5".out' has not changed.
+(rerunfilecheck)             Checksum: 26383F363E17942A4DAE811B8300119D;624.
  ) 
 Here is how much of TeX's memory you used:
- 32664 strings out of 474116
- 757732 string characters out of 5743681
- 1951187 words of memory out of 5000000
- 54492 multiletter control sequences out of 15000+600000
- 566551 words of font info for 69 fonts, out of 8000000 for 9000
+ 32666 strings out of 474116
+ 757734 string characters out of 5743681
+ 1966187 words of memory out of 5000000
+ 54501 multiletter control sequences out of 15000+600000
+ 565624 words of font info for 66 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 102i,8n,107p,802b,609s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on "RH 1.4.pdf" (4 pages, 130280 bytes).
+ 102i,9n,107p,782b,609s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
+Output written on "RH 1.5.pdf" (2 pages, 89663 bytes).
 PDF statistics:
- 108 PDF objects out of 1000 (max. 8388607)
- 79 compressed objects within 1 object stream
- 25 named destinations out of 1000 (max. 500000)
- 13 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 116 PDF objects out of 1000 (max. 8388607)
+ 95 compressed objects within 1 object stream
+ 21 named destinations out of 1000 (max. 500000)
+ 101 words of extra memory for PDF output out of 10000 (max. 10000000)
 
