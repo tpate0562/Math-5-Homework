@@ -45,23 +45,53 @@ x_3 \begin{bmatrix} 9 \\ -4 \\ 1 \\ 0 \end{bmatrix} + x_4 \begin{bmatrix} 8 \\ -
 $\begin{bmatrix}1&3&-5&4\\1&4&-8&7\\-3&-7&9&-6\end{bmatrix}\rightarrow R_2-=R_1,\;R_3+=3R_1\rightarrow\begin{bmatrix}1&3&-7&4 \\ 0&1&-3&3\\ 0&2&-6&6\end{bmatrix}\\R_3-=2R_2,\;R_1-=3R_2 \rightarrow \begin{bmatrix}1&0&2&-5\\0&1&-3&3\\0&0&0&0\end{bmatrix} x_3=t
 \\[0.1in]x_1=-5-2t,\;x_2=3+3t$ \boxed{\begin{bmatrix}x_1\\x_2\\x_3\end{bmatrix} = \begin{bmatrix}-5\\3\\0 \end{bmatrix}+ x_3\begin{bmatrix}-2\\3\\1 \end{bmatrix}}
 \subsection*{23}
-Line is y=-x-2
-so the equation is $x=\begin{bmatrix}0\\-2\end{bmatrix} + t\begin{bmatrix}1 \\ -1\end{bmatrix}$
+Line is y=-x-2 so the equation is $x=\begin{bmatrix}0\\-2\end{bmatrix} + t\begin{bmatrix}1 \\ -1\end{bmatrix}$
 \subsection*{28}
 False: Nontrivial means at least 1 is nonzero, not all of them
 \subsection*{40}
 No. The origin is where $b=0$ in all dimensions, so $b$ would need to equal 0
 
 \section{Computer Homework}
-\subsection{}
-\subsection{}
-\subsection{}
-\subsection{}
-\subsection{}
-\subsection{}
-\subsection{}
-\subsection{}
-\subsection{}
-\subsection{}
-
+\subsection*{1}
+Determine if the system has a nontrivial solution. Try to use as few row operations as possible
+$2x_1-9x_2+11x_3=0 \\ -2x_1-11x_2+4x_3=0\\4x_1+2x_2+7x_3=0$
+\\ \boxed{$The system has a nontrivial solution$}
+\subsection*{2}
+Describe all solution of $A\mathbf{x}=\mathbf{0}$ in parametric vector form, where A is row equivalent to the given matrix.
+$\begin{bmatrix}1&4&-3&5\\0&1&-2&6\end{bmatrix}$
+\\ \boxed{\mathbf{x}=x_3\begin{bmatrix}-5\\2\\1\\0\end{bmatrix}+x_4\begin{bmatrix}19\\-6\\0\\1\end{bmatrix}}
+\subsection*{3}
+Describe all solution of $A\mathbf{x}=\mathbf{0}$ in parametric vector form, where A is row equivalent to the given matrix.
+$\begin{bmatrix}1&2&0&-3\\4&8&0&-12\end{bmatrix}$
+\\ \boxed{\mathbf{x}=x_2\begin{bmatrix}-2\\1\\0\\0\end{bmatrix}+x_3x_2\begin{bmatrix}0\\0\\1\\0\end{bmatrix} + x_4 x_2\begin{bmatrix}3\\0\\0\\1\end{bmatrix}}
+\subsection*{4}
+Describe all solution of $A\mathbf{x}=\mathbf{0}$ in parametric vector form, where A is row equivalent to the given matrix.
+$\begin{bmatrix}1&4&3&-4&0&-1\\0&0&1&0&0&-8\\0&0&0&1&0&-3\\0&0&0&0&0&0\end{bmatrix}$
+\\ \boxed{\mathbf{x}=x_2 \begin{bmatrix}-4\\1\\0\\0\\0\\0\end{bmatrix}+x_5\begin{bmatrix}0\\0\\0\\0\\1\\0\end{bmatrix}+x_6\begin{bmatrix}-11\\0\\8\\3\\0\\1\end{bmatrix} }
+\subsection*{5}
+Suppose the solution set of a certain system of linear equations can be described as $x_1=5+3x_3, x_2=-3-6x_3$ with $x_3$ free. Use vectors to describe this set as a line in $\mathbb{R}^3$
+Geometrically, the solution set is a line through $\begin{bmatrix}5\\-3\\0\end{bmatrix}$ and parallel to $\begin{bmatrix}3\\-6\\1\end{bmatrix}$
+\subsection*{6}
+$3x_1 + 3x_2 + 6x_3 = 12,\qquad  \qquad 3x_1 + 3x_2 + 6x_3 = 0,$\\
+$-9x_1 - 9x_2 - 18x_3 = -36, \qquad -9x_1 - 9x_2 - 18x_3 = 0,$\\
+$-7x_2 + 14x_3 = 14,\quad \qquad \qquad -7x_2 + 14x_3 = 0$\\[0.5in]
+Describe the solutions of the first system of equations below in parametric vector form. Provide a geometric comparison with the solution set of the second system of equations below
+\\Describe the solution set of the first system of equations in parametric vector form. Select the correct choice below and fill in the answer box(es) within your choice.
+$\mathbf{x}=\begin{bmatrix}6\\-2\\0\end{bmatrix}  +x_3 \begin{bmatrix}-4\\2\\1\end{bmatrix}$
+\\Which option best compares the two systems? The solution set of the first system is a line parallel to the line that is the solution set of the second system.
+\subsection*{7}
+Find a parametric equation of the line M through p and q for the given values of p and q. Hint: M is parallel to the vector q-p shown in the figure.
+\\$p=\begin{bmatrix}-7\\2\end{bmatrix},q=\begin{bmatrix}0\\-4\end{bmatrix}$
+\\Answer:$\mathbf{x}=\begin{bmatrix}0\\-4\end{bmatrix}+t\begin{bmatrix}7\\-6\end{bmatrix}(t \epsilon \mathbb{R})$
+\subsection*{8}
+A is a $3\times3$ matrix with three pivot positions.
+a: Does the equation Ax=0 have a nontrivial solution? No
+b: Does the equation Ax=b have at least one solution for every possible b? Yes
+\subsection*{9}
+A is a $2\times5$ matrix with three pivot positions.
+a: Does the equation Ax=0 have a nontrivial solution? Yes
+b: Does the equation Ax=b have at least one solution for every possible b? Yes
+\subsection*{10}
+Given $A=\begin{bmatrix}-2&-6\\5&15\\-3&-9\end{bmatrix},$ find one nontrivial solution of $Ax=0$ by inspection. 
+\\$\mathbf{x}=\begin{bmatrix}-3\\1\end{bmatrix}$
 \end{document}
