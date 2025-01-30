@@ -1,8 +1,8 @@
-PWD /Users/tejaspatel/Desktop/LaTeX Projects/Math 5 Homework
+PWD /Users/tejaspatel/Desktop/LaTeX Projects/Math 5 Homework/MATH 5 Homework 1.5
 INPUT /usr/local/texlive/2024/texmf.cnf
 INPUT /usr/local/texlive/2024/texmf-dist/web2c/texmf.cnf
 INPUT /usr/local/texlive/2024/texmf-var/web2c/pdftex/pdflatex.fmt
-INPUT /Users/tejaspatel/Desktop/LaTeX Projects/Math 5 Homework/RH 1.5.tex
+INPUT /Users/tejaspatel/Desktop/LaTeX Projects/Math 5 Homework/MATH 5 Homework 1.5/RH 1.5.tex
 OUTPUT RH 1.5.log
 INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/base/article.cls
 INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/base/article.cls
