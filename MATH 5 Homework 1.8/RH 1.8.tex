@@ -16,97 +16,137 @@
 \usepackage{amssymb}
 \usepackage{multicol}
 \usepackage{numerica}
+\usepackage{tikz}
+\usetikzlibrary{arrows.meta, calc}
 \usepackage[top=0.7in, left=0.8in, right=0.8in, bottom=1in]{geometry}
 \AtBeginEnvironment{document}{\everymath{\displaystyle}}
 \pagestyle{plain}
-\title{RH 1.6}
+\title{RH 1.8}
 \author{MATH 5, Jones}
 \date{Tejas Patel}
 \begin{document}
 \maketitle
 \section*{Refrigerator Homework}
-\subsection*{7}
-
-$\begin{bmatrix} 1 & 4 & -3 & 0 \\ -2 & -7 & 5 & 1 \\ -4 & -5 & 7 & 5 \end{bmatrix}$ RREF: 
-$\begin{bmatrix}
-    1 & 0 & 0 & -3 \\
-    0 & 1 & 0 & 0 \\
-    0 & 0 & 1 & -1
-    \end{bmatrix}$
-\\The set of column vectors is linearly dependent, because there are more vectors (4) than the dimension of the space they occupy (at most 3). This means at least one of the columns can be written as a linear combination of the others.
-\subsection*{9}
-$v_1 = \begin{bmatrix} 1 \\ -3 \\ 2 \end{bmatrix}, \quad v_2 = \begin{bmatrix} -3 \\ 10 \\ -6 \end{bmatrix}, \quad v_3 = \begin{bmatrix} 2 \\ -7 \\ h \end{bmatrix}$
-\\$c_1 \begin{bmatrix} 1 \\ -3 \\ 2 \end{bmatrix} + c_2 \begin{bmatrix} -3 \\ 10 \\ -6 \end{bmatrix} = \begin{bmatrix} 2 \\ -7 \\ h \end{bmatrix}$
-a: $
-c_1 (1) + c_2 (-3) = 2
-\\ c_1 (-3) + c_2 (10) = -7
-\\c_1 (2) + c_2 (-6) = h
-\\  c_1 - 3c_2 = 2 
-\\ -3c_1 + 10c_2 = -7 
-\\3c_1 - 9c_2 = 6
-\\(3c_1 - 9c_2) + (-3c_1 + 10c_2) = 6 - 7 \qquad  c_2 = -1
-\\c_1 + 3 = 2
-\\$Thus, $v_3$  is in Span$\{v_1, v_2\}$ when  $h = 4$ \\b: Solving using the determinant
-$
-A = \begin{bmatrix} 1 & -3 & 2 \\ -3 & 10 & -7 \\ 2 & -6 & h \end{bmatrix}
-\\
-\text{det}(A) =1 \begin{vmatrix} 10 & -7 \\ -6 & h \end{vmatrix}•	(-3) \begin{vmatrix} -3 & -7 \\ 2 & h \end{vmatrix}•	2 \begin{vmatrix} -3 & 10 \\ 2 & -6 \end{vmatrix}
-\\\begin{vmatrix} 10 & -7 \\ -6 & h \end{vmatrix} = 10h + 42 = 10h + 42
-\\\begin{vmatrix} -3 & -7 \\ 2 & h \end{vmatrix} = (-3h + 14)
-\\\text{det}(A) = 1(10h + 42) + 3(-3h + 14) + 2(-2)
-\\h+80=0 \qquad h=-80
-$
-
+\subsection*{17}
+Since $T$ is linear $T(a\,\mathbf{x}) \;=\;a\,T(\mathbf{x}) \quad\text{and}\quad T(\mathbf{x}+\mathbf{y}) \;=\;T(\mathbf{x})+T(\mathbf{y}).$
+\\Given $T(\mathbf{u}) \;=\;\begin{bmatrix}2\\1\end{bmatrix}\quad\text{and}\quad T(\mathbf{v}) \;=\;\begin{bmatrix}-1\\3\end{bmatrix}.$
+\\\boxed{3u=3\begin{bmatrix}2\\1\end{bmatrix}= \begin{bmatrix}6\\3\end{bmatrix} \qquad 2v=2\begin{bmatrix}-1\\3\end{bmatrix}= \begin{bmatrix}-2\\6\end{bmatrix} \qquad 3u+2v=\begin{bmatrix}6-2\\3+6\end{bmatrix}=\begin{bmatrix}4\\9\end{bmatrix}}
 \subsection*{20}
-Since one of the vectors $v_3$ is the zero vector, the set of vectors is linearly dependent
+$\mathbf{e}_1 = \begin{bmatrix}1\\0\end{bmatrix},\quad\mathbf{e}_2 = \begin{bmatrix}0\\1\end{bmatrix}.$\\The first column of A is $T(\mathbf{e}_1)$, and the second column is $T(\mathbf{e}_2)$.\\$T\bigl(x_1,x_2\bigr)=x_1\,v_1 + x_2\,v_2$\\Given that$T(x_1,x_2) \;=\;x_1\,v_{1}\;+\;x_2\,v_{2}$,
+then for the standard basis vectors $\mathbf{e}_1=(1,0)$ and $\mathbf{e}_2=(0,1)$ we have$T(\mathbf{e}1) \;=\;v_{1},\quad T(\mathbf{e}2) \;=\;v_{2}$.\\$A \;=\;\bigl[v_{1}\;\;v_{2}\bigr]\;=\;$\boxed{\begin{bmatrix}-2 & 7\\5 & -3\end{bmatrix}}
 \subsection*{21}
-False The columns of a matrix $A$ are linearly independent if the only solution to $Ax=0$ is the trivial solution $x=0$.
-\subsection*{23}
-False: If S is a linearly \textbf{dependent} set, then at least one vector in S can be written as a linear combination of the others
-\subsection*{27} True: 
-The set ${x,y}$ being linearly independent means that neither $x$ nor $y$ can be written as a linear combination of the other.\\
-The set ${x,y,z}$ being linearly dependent means that there exists a nontrivial linear combination such that:
-$c_1x+c_2y+c_3z=0$
-\subsection*{29}
-Since  $A$  is a  $3 \times 3 $ matrix with linearly independent columns, this means:
-\begin{enumerate}
-    \item 	The columns form a basis for  $\mathbb{R}^3$ , so the matrix is invertible.
-    \item The rank of  A  is 3, meaning all three rows contain leading 1s in its echelon form.
-    \item The reduced row echelon form (RREF) of  $A$  must be the identity matrix, because an invertible matrix always reduces to the identity matrix.
-\end{enumerate}
-$
-\begin{bmatrix} 1 & 0 & 0 \\ 0 & 1 & 0 \\ 0 & 0 & 1 \end{bmatrix}
-$ and $\begin{bmatrix} 1 & a & b \\ 0 & 1 & c \\ 0 & 0 & 1 \end{bmatrix}
-\\[0.1in]$ Since  A  has linearly independent columns, it has full rank (3). This guarantees that its echelon form will always have three pivot positions, leading to either:
-\begin{enumerate}
-    \item The identity matrix (in RREF).
-    \item An upper triangular form (in REF).
-\end{enumerate}
-\subsection*{36}
-a: $n$
-b: A matrix $ A $ with $ n $ columns has linearly independent columns if the only solution to  $A\mathbf{x} = 0$  is the trivial solution $(\mathbf{x} = 0)$.
-\subsection*{37}
-$\{-1, -1, 1\}$
-\subsection*{42}
-False
-\\ The set  $\{ v_1, v_2, v_3, v_4 \}$  is linearly independent if no vector in the set is a linear combination of the others. The given statement only ensures  $v_3 $ is independent of  $v_1, v_2, v_4$ , but it does not rule out dependencies involving all four vectors.
-\subsection*{44}
-\textbf{True}
-\\ 	•	A set of vectors is linearly independent if the only solution to:
+True. A linear transformation is indeed a function (one that takes vectors as inputs and returns vectors as outputs) but it satisfies two special properties:\\
+1.	Additivity: $T(\mathbf{u}+\mathbf{v}) = T(\mathbf{u}) + T(\mathbf{v})$.
+\\2.	Homogeneity: $T(c\,\mathbf{u}) = c\,T(\mathbf{u})$ for any scalar c
+\\Any function that meets both of these properties is called a linear transformation, so it's a specialized type of function.
+\subsection*{24}
+False.
+The set of all linear combinations of the columns of A is the range (or image) of the transformation function, a subset of its codomain.
+When we write $T\colon \mathbb{R}^n \to \mathbb{R}^m$ via $T(\mathbf{x}) = A\mathbf{x}$, the usual codomain is $\mathbb{R}^m$. The range—the set of all possible outputs that T actually attains—coincides with the column space of A. So the column space is a subspace of the codomain, not the entire codomain itself
+\subsection*{31}
+%------------------------------------------------------------------
+% 1) Illustrate  T(u+v) = T(u) + T(v)
+%------------------------------------------------------------------
+\begin{tikzpicture}[scale=1.3,>=Stealth, line cap=round, line join=round]
+    % axes
+    \draw[->] (-0.5,0) -- (4,0) node[right] {$x$};
+    \draw[->] (0,-2) -- (0,2) node[above] {$y$};
+    
+    % define vectors u and v (in blue)
+    \coordinate (O)   at (0,0);
+    \coordinate (u)   at (1,1);
+    \coordinate (v)   at (2,0.5);
+    \coordinate (u+v) at ($(u)+(v)$);
+    
+    % reflection across x-axis means (x,y) -> (x,-y)
+    \coordinate (Tu)     at ($(u)+(0,-2*1)$);     % reflection of (1,1) is (1,-1)
+    \coordinate (Tv)     at ($(v)+(0,-2*0.5)$);   % reflection of (2,0.5) is (2,-0.5)
+    \coordinate (Tuv) at ($(u+v) + (0,{-2*1.5})$); % Define the transformed coordinate
 
-$c_1 v_1 + c_2 v_2 + c_3 v_3 + c_4 v_4 = 0$
 
-is the trivial solution  $c_1 = c_2 = c_3 = c_4 = 0 $.
-	\\•	Since  $v_1, v_2, v_3, v_4 $ are linearly independent, no vector in this set can be written as a linear combination of the others.
-	\\•	Now consider the subset  $\{ v_1, v_2, v_3 \}$ . If we assume:
+    
+    %--- draw the original vectors in blue
+    \draw[->,very thick,blue]  (O) -- (u)   node[midway,left]  {$\mathbf{u}$};
+    \draw[->,very thick,blue]  (O) -- (v)   node[midway,above] {$\mathbf{v}$};
+    \draw[->,very thick,blue,dashed] (O) -- (u+v) node[midway,right] {$\mathbf{u}+\mathbf{v}$};
+    
+    %--- draw the reflected vectors in red
+    \draw[->,very thick,red]  (O) -- (Tu)     node[midway,right]  {$T(\mathbf{u})$};
+    \draw[->,very thick,red]  (O) -- (Tv)     node[midway,below]  {$T(\mathbf{v})$};
+    \draw[->,very thick,red,dashed] (O) -- (Tuv) node[midway,right] {$T(\mathbf{u}+\mathbf{v})$};
 
-$c_1 v_1 + c_2 v_2 + c_3 v_3 = 0$\\
-then we can rewrite it as $c_1 v_1 + c_2 v_2 + c_3 v_3 + 0 \cdot v_4 = 0$\\
-Since  $v_1, v_2, v_3, v_4 $ were already independent, the only solution to this equation is:\\
-$c_1 = c_2 = c_3 = 0$\\
-This confirms that  $\{ v_1, v_2, v_3 \}$  is also linearly independent
-\section*{Computer Homework}
-\subsection*{1}
-\subsection*{2}
-\subsection*{3}
+    
+    %--- show that T(u+v) = T(u) + T(v) by the parallelogram rule
+    \draw[thin,red] (Tu) -- ($(Tu)+(Tv)$) -- (Tv);
+    \draw[->,very thick,red,dotted] (O) -- ($(Tu)+(Tv)$) node[pos=1,below] {$T(\mathbf{u}) + T(\mathbf{v})$};
+    
+  \end{tikzpicture}\\
+  %------------------------------------------------------------------
+  % 2) Illustrate  T(cu) = c T(u)
+  %------------------------------------------------------------------
+  \begin{tikzpicture}[scale=1.3,>=Stealth, line cap=round, line join=round]
+    % axes
+    \draw[->] (-0.5,0) -- (3,0) node[right] {$x$};
+    \draw[->] (0,-2) -- (0,2)  node[above] {$y$};
+  
+    % pick u = (1,1) and c = 1.5
+    \coordinate (O) at (0,0);
+    \coordinate (u) at (1,1);
+    \def\c{1.5}
+    \coordinate (cu) at (\c,\c);
+  
+    % reflection across x-axis
+    \coordinate (Tu)  at (1,-1);
+    \coordinate (Tcu) at (\c,-\c);
+  
+    %--- original vectors in blue
+    \draw[->,very thick,blue]        (O) -- (u)  node[midway,left] {$\mathbf{u}$};
+    \draw[->,very thick,blue,dashed] (O) -- (cu) node[midway,above] {$c\,\mathbf{u}$};
+  
+    %--- reflected vectors in red
+    \draw[->,very thick,red]        (O) -- (Tu)  node[midway,right] {$T(\mathbf{u})$};
+    \draw[->,very thick,red,dashed] (O) -- (Tcu) node[midway,right] {$T(c\,\mathbf{u})$};
+  
+    % optional guide line to emphasize c*T(u) coincides with T(c*u)
+    \draw[dotted,red] (Tu) -- (Tcu);
+    \node[red] at ($(Tu)!0.5!(Tcu)+(0.3,0)$) {$\times c$};
+  \end{tikzpicture}
+\subsection*{32}
+1.	Every $\mathbf{x}\in \Bbb R^n$ can be written as a linear combination of the spanning vectors $v_1,\dots,v_p$.  In symbols,
+
+$\mathbf{x} \;=\; c_1\,v_1 \;+\; c_2\,v_2 \;+\;\cdots\;+\;c_p\,v_p.$
+
+	2.	Apply T and use linearity:
+
+$T(\mathbf{x})
+\;=\;
+T\bigl(c_1\,v_1 + c_2\,v_2 + \cdots + c_p\,v_p\bigr)
+\;=\;
+c_1\,T(v_1) \;+\; c_2\,T(v_2) \;+\;\cdots\;+\;c_p\,T(v_p)$.
+
+	3.	But each $T(v_i)=\mathbf{0}$, by assumption.  Hence every term on the right is zero, so
+
+$T(\mathbf{x}) = \mathbf{0}$.
+
+
+Because $\mathbf{x}$ is an arbitrary vector that can span $\mathbb{R}^n$, it follows that $T(\cdot)$ sends every vector to $\mathbf{0}$.
+\subsection*{39}
+Because $v_1,v_2,v_3$ is dependent, there exist scalars $c_1,c_2,c_3$, not all zero, such that
+
+$c_1\,v_1 \;+\; c_2\,v_2 \;+\; c_3\,v_3 \;=\;\mathbf{0}$.
+
+Apply the linear map T to both sides:
+
+$T\bigl(c_1 v_1 + c_2 v_2 + c_3 v_3\bigr)
+\;=\;
+c_1\,T(v_1) \;+\; c_2\,T(v_2) \;+\; c_3\,T(v_3)
+\;=\;
+T(\mathbf{0}) \;=\;\mathbf{0}$.
+
+This shows that
+
+$c_1\,T(v_1) \;+\; c_2\,T(v_2) \;+\; c_3\,T(v_3) \;=\;\mathbf{0}$,
+
+with $(c_1,c_2,c_3)\neq(0,0,0)$, meaning $\,T(v_1),T(v_2),T(v_3)$ is also linearly dependent.
+\pagebreak \section*{Computer Homework: Next 10 Pages}
 \end{document}
