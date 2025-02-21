@@ -1,0 +1,71 @@
+% !root= RH 1.6.tex
+\documentclass{article}
+\usepackage{tikz}
+\usepackage{pgfplots}
+\usepackage{setspace}
+\usepackage{units}
+\usepackage{graphicx}
+\usepackage{amsopn}
+\usepackage{bbding}
+\usepackage{amsmath}
+\usepackage{hyperref}
+\usepackage{cancel}
+\usepackage{etoolbox}
+\usepackage{enumitem}
+\usepackage{gensymb}
+\usepackage{amssymb}
+\usepackage{multicol}
+\usepackage{numerica}
+\usepackage{tikz}
+\usetikzlibrary{arrows.meta, calc}
+\usepackage[top=0.7in, left=0.8in, right=0.8in, bottom=1in]{geometry}
+\AtBeginEnvironment{document}{\everymath{\displaystyle}}
+\pagestyle{plain}
+\title{RH 1.9}
+\author{MATH 5, Jones}
+\date{Tejas Patel}
+\begin{document}
+\maketitle
+\section*{Refrigerator Homework}
+\subsection*{9}
+$AB=\begin{bmatrix}
+  8+15 & 5k-10 \\ -12+3 & 15+k
+\end{bmatrix}= \begin{bmatrix} 23 & 5k - 10 \\ -9 & k + 15 \end{bmatrix}$
+\\[0.1in]$BA = \begin{bmatrix}8+15 & 20-5 \\ 6-3k & 15+k \end{bmatrix} = \begin{bmatrix} 23 & 15 \\ 6 - 3k & k + 15 \end{bmatrix}$
+\\ \boxed{6-3k=-9 \rightarrow k=5}
+\subsection*{25}
+$\begin{bmatrix} 1 & -2 \\ -2 & 5 \end{bmatrix}\begin{bmatrix} x \\ y \end{bmatrix}\begin{bmatrix} -1 \\ 6 \end{bmatrix}$
+\\[0.1in]$ 1x - 2y = -1 $ and $ -2x + 5y = 6 $ Solving the system with wolfram the result is $\mathbf{b_1} = \begin{bmatrix} 7 \\ 4 \end{bmatrix}$
+\\$\begin{bmatrix} 1 & -2 \\ -2 & 5 \end{bmatrix}\begin{bmatrix} x \\ y \end{bmatrix}\begin{bmatrix} 2 \\ -9 \end{bmatrix}$
+\\[0.1in]$ 1x - 2y = 2 $ and $-2x + 5y = -9 $ solving the system with Wolfram the result is $\mathbf{b_2} = \begin{bmatrix} -8 \\ -5 \end{bmatrix}$
+\subsection*{29}
+Since there exists a nonzero vector $ \mathbf{b_n}$  such that  $A \mathbf{b_n} = \mathbf{0}$, this confirms that the columns of  $A$  are linearly dependent.
+\\Since $A$ is linearly dependent,  $A$  is not invertible, and its columns do not form a basis for the space.
+\subsection*{31}
+Suppose $Ax=0 \\ CAx=C0 \quad CA=I_n \\ I_nx=0 \\ x=0$
+\\If A had more columns than rows it would have free variables, which would lead to more than the trivial solution being a solution
+\subsection*{32}
+Suppose (since Ax=b has a solution) $
+AD = I_m\\
+\mathbf{x} = D \mathbf{b}
+\\A \mathbf{x} = A (D \mathbf{b})
+\\(AD) \mathbf{b} = I_m \mathbf{b}$ Since $AD = I_m$, $A \mathbf{x} = \mathbf{b}$
+\\If A had more rows than columns it would be overdetermined, and there would be more equations than unknowns. 
+\subsection*{35}
+a: $3b-2a-4c$
+\\b: Same as a, $3b-2a-4c$
+\\c: $u v^T = \begin{bmatrix} -2 \\ 3 \\ -4 \end{bmatrix}\begin{bmatrix} a & b & c \end{bmatrix} = 
+\begin{bmatrix}
+(-2)(a) & (-2)(b) & (-2)(c) \\
+(3)(a) & (3)(b) & (3)(c) \\
+(-4)(a) & (-4)(b) & (-4)(c)
+\end{bmatrix} = 
+\begin{bmatrix}
+-2a & -2b & -2c \\
+3a & 3b & 3c \\
+-4a & -4b & -4c
+\end{bmatrix}
+$
+\\d: 
+\pagebreak \section*{Computer Homework: Next 10 Pages}
+\end{document}

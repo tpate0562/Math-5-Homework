@@ -1,0 +1,85 @@
+% !root= RH 1.6.tex
+\documentclass{article}
+\usepackage{tikz}
+\usepackage{pgfplots}
+\usepackage{setspace}
+\usepackage{units}
+\usepackage{graphicx}
+\usepackage{amsopn}
+\usepackage{bbding}
+\usepackage{amsmath}
+\usepackage{hyperref}
+\usepackage{cancel}
+\usepackage{etoolbox}
+\usepackage{enumitem}
+\usepackage{gensymb}
+\usepackage{amssymb}
+\usepackage{multicol}
+\usepackage{numerica}
+\usepackage{tikz}
+\usetikzlibrary{arrows.meta, calc}
+\usepackage[top=0.7in, left=0.8in, right=0.8in, bottom=1in]{geometry}
+\AtBeginEnvironment{document}{\everymath{\displaystyle}}
+\pagestyle{plain}
+\title{RH 1.9}
+\author{MATH 5, Jones}
+\date{Tejas Patel}
+\begin{document}
+\maketitle
+\section*{Refrigerator Homework}
+\subsection*{10}
+ \( T: \mathbb{R}^2 \to \mathbb{R}^2 \) first reflects points through the vertical \( x_2 \)-axis and then rotates points \( \frac{3\pi}{2} \) radians.
+\\$\begin{bmatrix}
+  1&0\\0&1
+\end{bmatrix} \rightarrow \text{Reflection through the $x_2$ axis from textbook table} \rightarrow \begin{bmatrix}
+  -1&0\\0&1
+\end{bmatrix}$
+\\[0.1in]$\frac{3\pi}{2}$ rad rotation (90 degree clockwise)$\rightarrow \begin{bmatrix}
+  0&1\\-1&0
+\end{bmatrix}$
+\\[0.1in]Multiplying them together: 
+$\begin{bmatrix}-1&0\\0&1\end{bmatrix} \begin{bmatrix}0&1\\-1&0\end{bmatrix}= 
+\begin{bmatrix}0&1\\-1&0\end{bmatrix}=$\boxed{\begin{bmatrix} 0 & -1 \\ -1 & 0 \end{bmatrix}}
+\subsection*{17}
+Show that \( T \) is a linear transformation by finding a matrix that implements the mapping. Note that \( x_1, x_2, \dots \) are not vectors but are entries in vectors.
+\\\( T(x_1, x_2, x_3, x_4) = (0, x_1 + x_2, x_2 + x_3, x_3 + x_4) \)
+\\T = $\begin{bmatrix}
+  0 & 0 & 0 & 0 \\
+  1 & 1 & 0 & 0 \\
+  0 & 1 & 1 & 0 \\
+  0 & 0 & 1 & 1
+  \end{bmatrix}$ Since all values inside the matrix are real and make the transformation linear and nothing \\[0.05in]other than linear, the transformation can be considered linear
+\subsection*{23}
+True. The transformation matrix is calculated using the identity matrix, meaning\\Identitiy Matrix $\rightarrow$ Transformation Matrix
+\subsection*{25}
+Yes. Rotations are linear transformations as they scale by 1 and dont have any nonlinear effect on the original point
+\subsection*{33}
+$
+A = \begin{bmatrix}
+0 & 0 & 0 & 0 \\
+1 & 1 & 0 & 0 \\
+0 & 1 & 1 & 0 \\
+0 & 0 & 1 & 1
+\end{bmatrix}
+$ only has 3 pivots so it only maps into $\mathbb{R}^3$, not $\mathbb{R}^4$ so it is neither onto and also means its not one-to-one since there's a row of zeores
+\subsection*{35}
+$
+T \begin{bmatrix} x_1 \\ x_2 \\ x_3 \end{bmatrix} =
+\begin{bmatrix}
+1 & -5 & 4 \\
+0 & 1 & -6
+\end{bmatrix}
+\begin{bmatrix} x_1 \\ x_2 \\ x_3 \end{bmatrix}
+$ makes the transformation matrix $
+A = \begin{bmatrix}
+1 & -5 & 4 \\
+0 & 1 & -6
+\end{bmatrix}
+$. It is onto since there are 2 pivots, one for each row, but is not one-to-one since its not true that the only element of each row is the pivot
+\subsection*{43}
+For $\mathbb{R}^n \rightarrow \mathbb{R}^m$ A linear transformation  T  is onto if its image spans the entire codomain  $\mathbb{R}^m$ , which means the rank of the transformation matrix  A  must be equal to  m  (i.e., the number of linearly independent rows must be  $m$). That wasy $n\geq m$
+\\A linear transformation  T  is one-to-one if the null space of  A  is trivial, meaning the only solution to  Ax = 0  is the zero vector. This occurs when  A  has full column rank, meaning: $n \leq m$
+\\ For  T  to be both onto ($ n \geq m $) and one-to-one ($ n \leq m $), we require: $n = m$
+
+\pagebreak \section*{Computer Homework: Next 10 Pages}
+\end{document}
