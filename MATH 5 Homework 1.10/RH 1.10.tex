@@ -1,0 +1,58 @@
+% !root= RH 1.6.tex
+\documentclass{article}
+\usepackage{tikz}
+\usepackage{pgfplots}
+\usepackage{setspace}
+\usepackage{units}
+\usepackage{graphicx}
+\usepackage{amsopn}
+\usepackage{bbding}
+\usepackage{amsmath}
+\usepackage{hyperref}
+\usepackage{cancel}
+\usepackage{etoolbox}
+\usepackage{enumitem}
+\usepackage{gensymb}
+\usepackage{amssymb}
+\usepackage{multicol}
+\usepackage{numerica}
+\usepackage{tikz}
+\usetikzlibrary{arrows.meta, calc}
+\usepackage[top=0.7in, left=0.8in, right=0.8in, bottom=1in]{geometry}
+\AtBeginEnvironment{document}{\everymath{\displaystyle}}
+\pagestyle{plain}
+\title{RH 1.10}
+\author{MATH 5, Jones}
+\date{Tejas Patel}
+\begin{document}
+\maketitle
+\section*{Refrigerator Homework}
+\subsection*{6}
+$\begin{cases}
+  5I_1 + 2I_2 = 30 \\
+  2I_1 + 7I_2 + 4I_3 = 20 \\
+  4I_2 + 9I_3 + I_4 = 40 \\
+  3I_1 + I_3 + 6I_4 = 10
+  \end{cases} = \begin{bmatrix}
+    5&2&0&0&30\\2&7&4&0&20\\0&4&9&1&40\\0&0&2&-7&10
+  \end{bmatrix}\rightarrow \text{RREF} \rightarrow \begin{bmatrix} 1 & 0 & 0 & 0 & \frac{2002}{291} \\[0.1in] 0 & 1 & 0 & 0 & -\frac{640}{291} \\[0.1in] 0 & 0 & 1 & 0 & \frac{1574}{291} \\[0.1in] 0 & 0 & 0 & 1 & \frac{34}{291} \end{bmatrix}$ All quantities in SI Amperes
+\subsection*{9}
+$C_{n+1} = 0.93C_n + 0.05S_n \\ 
+S_{n+1} = 0.95S_n + 0.07C_n$
+\\If $C_0=800,000$ and $S_0=500,000$, $C_2=741720$, $S_2=558280$ 
+\subsection*{12}
+
+$P = \begin{bmatrix}
+  0.97 & 0.05 & 0.10 \\
+  0.00 & 0.90 & 0.05 \\
+  0.03 & 0.05 & 0.85
+  \end{bmatrix} \qquad 
+  x_0 = \begin{bmatrix} 295 \\ 55 \\ 150 \end{bmatrix} \\[0.1in] 
+$ If $  x_{n+1} = P x_n, \qquad x_3=\begin{bmatrix}
+  311.543\\  58.255\\ 130.202
+\end{bmatrix}$
+
+  
+   
+
+\end{document}
